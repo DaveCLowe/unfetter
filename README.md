@@ -49,7 +49,7 @@ cd unfetter
 cd ansible
 ```
 
-Investigate the hosts.ini file.  There a number of host types availabe.  Each host type has a different set of variables in the ansible group_vars.  For most cases, under ```[deployed]``` there shoudl be ```prod-uac```
+Investigate the hosts.ini file.  There a number of host types availabe.  Each host type has a different set of variables in the ansible group_vars.  For most cases, under ```[deployed]``` there should be ```prod-uac```
 
 Open the file unfetter/ansible/group_vars/production.yml.  Change any variables that are necessary.  The variables are currently set to support local deployment.  To build onto a remote system, change to ansible_connection, ansible_host and ansible_ssh_private_key_file are necessary.   
 
